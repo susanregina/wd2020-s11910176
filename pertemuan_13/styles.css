@@ -1,0 +1,9 @@
+(style.css)
+
+img {
+    display: block;
+    background-color: lightblue;
+    padding: 20px ;
+    border: 10px solid red;
+    margin: 20px;
+}
