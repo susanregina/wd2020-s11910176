@@ -60,3 +60,29 @@ let berat = prompt("masukan Berat badan anda = kg");
 let tinggi = prompt("masukan Tinggi = cm");
 let bni = berat / (tinggi*tinggi);
 console.log("BMI = " + bni);
+
+function bmiCalculator () {
+    let berat = prompt("Masukkan Berat Badan (kg) : ");
+    console.log("Berat badan yang dimasukkan adalah " + berat);
+    let tinggi = prompt("Masukkan Tinggi Badan (m) : ");
+    console.log("Tinggi badan yang anda masukkan adalah " + tinggi);
+    let hasil = berat / (tinggi * tinggi);
+    console.log("BMI = " + hasil);
+
+    if (hasil < 18.5) {
+        console.log ("Underweight");
+    } else if (hasil >= 18.5 && hasil < 24.9) {
+        console.log("Normal Range");
+    } else if (hasil >= 25.0 && hasil < 29.9) {
+        console.log("Overweight (preobese)");
+    } else if (hasil >= 30.0) {
+        console.log ("Obese");
+    } else if (hasil > 30.0 && hasil < 34.9) {
+        console.log ("Class I");
+    } else if (hasil > 35.0 && hasil < 39.9) {
+        console.log ("Class II");
+    } else if (hasil >= 40.00) {
+        console.log ("Class III");
+    }
+}
+bmiCalculator();
